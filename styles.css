@@ -1,0 +1,262 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d0b49f;
+    color: #8b4513;
+    line-height: 1.6;
+}
+
+.body a:hover {
+    color: #1abc9c;
+}
+
+/* Header */
+header {
+    background-color: #d0b49f;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header a:hover {
+    color: #1abc9c;
+}
+
+.hero a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hero a:hover {
+    color: #1abc9c;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    position: relative;  /* Important for dropdown positioning */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+/* Dropdown Links Hover Effect */
+header nav ul li ul li a {
+    color: white;  /* Default dropdown text color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li ul li a:hover {
+    color: #1abc9c;  /* Turquoise when hovered */
+}
+
+/* Smooth Dropdown Transition */
+header nav ul li ul {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #d0b49f;
+    list-style: none;
+    padding: 10px 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+header nav ul li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #d0b49f;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hero a:hover {
+    color: #1abc9c;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    color: #FFFFFF;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #FFFFFF;
+}
+
+/* Category Sections */
+.category {
+    background-color: #faf0e6;
+    padding: 40px 0;
+}
+
+.category h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #d0b49f;
+    margin-bottom: 30px;
+}
+
+/* Main Category Headings Hover Effect */
+.category h2 a {
+    color: #d0b49f;  /* Default beige color */
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.category h2 a:hover {
+    color: #1abc9c;  /* Turquoise on hover */
+    text-decoration: none;
+}
+
+.category a {
+    color: #d0b49f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.category a:hover {
+    color: #1abc9c;
+}
+
+.subcategories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.subcategory {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 20px; 
+}
+
+.hero a {
+    color: #d0b49f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hero a:hover {
+    color: #1abc9c;
+}
+
+.subcategory h3 {
+    font-size: 1.5em;
+    color: #d0b49f;
+    margin-bottom: 15px;
+}
+
+.subcategory p {
+    color: #7f8c8d;
+}
+
+/* Subcategory Links */
+.subcategory h3 a {
+    color: #d0b49f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.subcategory h3 a:hover {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #d0b49f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+.health-subcategories .subcategory {
+   width: 90%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 30px 0;
+}
+
+.career-subcategories .subcategory {
+   width: 90%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 30px 0;
+}
+
+.relationships-subcategories .subcategory {
+   width: 90%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 30px 0;
+}
+
+.category:last-of-type {
+    padding-bottom: 60px;  /* Space above the footer */
+}
